@@ -1,8 +1,9 @@
-
- 
 #include <iostream>
+
 #include <fstream>
+
 #include <string>
+
 #include <iomanip>
  
 using namespace std; 
@@ -21,8 +22,7 @@ int main()
     int age;
     double beginningBalance, interestRate;
 
-    
-    
+
 	inFile.open("inData.txt");
 	outFile.open("outData.txt");
 
@@ -52,8 +52,6 @@ int main()
             << ", " << "Balance at the end of the month = $"
             << beginningBalance * (1 + interestRate / (12 * 100))
             << endl << endl;
-
-   
 
     inFile.close();
     outFile.close();
